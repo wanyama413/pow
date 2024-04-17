@@ -219,18 +219,18 @@ const Home = () => {
       <p className="mt-4 text-papa text-[12px] mb-3"> Background Image</p>
       <div className="relative w-full h-[125px] flex justify-center  p-2 border-gray-[#333] border-[1px] rounded-[5px]">
         <img className="w-full h-full" src="/baby.png" alt="" />
-        <div className="absolute bg-white p-1 rounded-full top-4 right-7">
-          <Pen strokeWidth={0.5} />
+        <div className="absolute bg-white p-[5px] rounded-full top-4 right-7">
+          <Pen size={15} strokeWidth={0.5} />
         </div>
       </div>
-      <div className="flex items-center mt-3">
+      <div className="flex items-center mt-3 mt-4">
         <RotateCcw
           className="-scale-y-100 rotate-90"
           size={20}
           color="#cccccc"
           strokeWidth={2}
         />{" "}
-        <p className="ml-2">Reset background</p>
+        <p className="ml-2 ">Reset background</p>
       </div>
     </main>
   );
