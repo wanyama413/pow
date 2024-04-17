@@ -131,7 +131,7 @@ const Home = () => {
         <div className="md:grid grid-cols-4">
           <div className="flex justify-between mb-3 md:justify-evenly">
             <div>Questions</div>
-            <div className="w-[20px] h-[20px] rounded-[20px] overflow-hidden p-3 m-0 border-[5px]">
+            <div className="w-[20px] h-[20px] rounded-[20px] overflow-hidden p-3 m-0 border-[4px] border-white shadow-lg">
               <input
                 className="outline-none border-none mt-[-30px] mr-0 mb-0 ml-[-30px] p-0 h-[100px] w-[100px]"
                 value={questionColor}
@@ -144,7 +144,7 @@ const Home = () => {
           </div>
           <div className="flex justify-between mb-3 md:justify-evenly">
             <div>Answers</div>
-            <div className="w-[20px] h-[20px] rounded-[20px] overflow-hidden p-3 m-0 border-[5px]">
+            <div className="w-[20px] h-[20px] rounded-[20px] overflow-hidden p-3 m-0 border-[4px] border-white shadow-lg">
               <input
                 className="outline-none border-none mt-[-30px] mr-0 mb-0 ml-[-30px] p-0 h-[100px] w-[100px]"
                 value={answerColor}
@@ -157,7 +157,7 @@ const Home = () => {
           </div>
           <div className="flex justify-between mb-3 md:justify-evenly">
             <div>Buttons</div>
-            <div className="w-[20px] h-[20px] rounded-[20px] overflow-hidden p-3 m-0 border-[5px]">
+            <div className="w-[20px] h-[20px] rounded-[20px] overflow-hidden p-3 m-0 border-[4px] border-white shadow-lg">
               <input
                 className="outline-none border-none mt-[-30px] mr-0 mb-0 ml-[-30px] p-0 h-[100px] w-[100px]"
                 value={buttonColor}
@@ -170,7 +170,7 @@ const Home = () => {
           </div>
           <div className="flex justify-between mb-3 md:justify-evenly">
             <div>Button Text</div>
-            <div className="w-[20px] h-[20px] rounded-[20px] overflow-hidden p-3 m-0 border-[5px]">
+            <div className="w-[20px] h-[20px] rounded-[15px] overflow-hidden p-3 m-0 border-[4px] border-gray-100 shadow-lg">
               <input
                 className="outline-none border-none mt-[-30px] mr-0 mb-0 ml-[-30px] p-0 h-[100px] w-[100px]"
                 value={buttonTextColor}
