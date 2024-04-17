@@ -43,7 +43,35 @@ const Home = () => {
     <main className="p-3 w-full">
       <div className="flex justify-between ">
         <div className="flex items-center">
-          <SquareArrowOutUpRightIcon />
+          <svg
+            width="19"
+            height="20"
+            viewBox="0 0 19 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              width="19"
+              height="19"
+              transform="translate(0 0.5)"
+              fill="white"
+            />
+            <path
+              d="M8.70833 3.66602H3.12269C2.92439 3.66602 2.73421 3.74479 2.59399 3.88501C2.45377 4.02523 2.375 4.2154 2.375 4.4137V16.3767C2.375 16.575 2.45377 16.7651 2.59399 16.9054C2.73421 17.0456 2.92439 17.1243 3.12269 17.1243H15.0856C15.2839 17.1243 15.4741 17.0456 15.6143 16.9054C15.7546 16.7651 15.8333 16.575 15.8333 16.3767V10.3952"
+              stroke="#262C2E"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M9.6707 9.84673L7.91666 11.5833M14.4417 8.30116C12.7666 10.2027 9.6707 9.84673 9.6707 9.84673C9.6707 9.84673 9.32867 6.37354 11.0125 4.48065C11.1586 4.30976 11.3233 4.15542 11.5037 4.02045L13.1788 4.63694L13.591 3.05664C14.3179 2.89078 15.0665 2.83805 15.8098 2.90034C15.8098 2.90034 16.1256 6.37354 14.4417 8.30116Z"
+              stroke="#262C2E"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+
           <p className="pl-3 text-[18px] font-medium"> Style Preferences</p>
         </div>{" "}
         <X color="#9EA6A8" />
