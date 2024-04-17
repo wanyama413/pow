@@ -30,10 +30,15 @@ const Home = () => {
   const [answerColor, setAnswerColor] = useState("#F2B963");
   const [buttonColor, setButtonColor] = useState("");
   const [buttonTextColor, setButtonTextColor] = useState("#ffffff");
+  const [isSelectActive, setIsSelectActive] = useState(true);
 
   useEffect(() => {
     setIsClient(true);
   }, []);
+  const handleSelectChange = (isActive) => {
+    console.log(isSelectActive);
+    setIsSelectActive((oldActive) => !oldActive);
+  };
   return (
     <main className="p-3 w-full">
       <div className="flex justify-between ">
@@ -54,27 +59,55 @@ const Home = () => {
           >
             <div className="flex items-center justify-between  mb-4 ">
               <div className="flex items-center space-x-2 justify-between">
-                <RadioGroupItem value="option-one" id="option-one " />
+                <RadioGroupItem
+                  onClick={handleSelectChange}
+                  value="option-one"
+                  id="option-one "
+                />
 
                 <Label htmlFor="option-one">Fullscreen</Label>
               </div>
               <div className="flex items-center space-x-4">
-                <Skeleton className="h-8 w-8 rounded-full" />
+                <Skeleton
+                  className={`h-8 w-8 rounded-full ${
+                    isSelectActive ? "bg-[#3D66F6]" : "bg-muted"
+                  }`}
+                />
                 <div className="space-y-2">
-                  <Skeleton className="h-4 w-[100px]" />
-                  <Skeleton className="h-4 w-[50px]" />
+                  <Skeleton
+                    className={`h-4 w-[100px] bg-muted ${
+                      isSelectActive ? "bg-[#3D66F6]" : "bg-muted"
+                    }`}
+                  />
+                  <Skeleton
+                    className={`h-4 w-[50px] bg-muted ${
+                      isSelectActive ? "bg-[#3D66F6]" : "bg-muted"
+                    }`}
+                  />
                 </div>
               </div>
             </div>
             <div className="flex justify-between items-center mb-5">
               <div className="flex items-center space-x-2">
-                <RadioGroupItem value="option-two" id="option-two" />
+                <RadioGroupItem
+                  onClick={handleSelectChange}
+                  value="option-two"
+                  id="option-two"
+                />
                 <Label htmlFor="option-two">Compact</Label>
               </div>
               <div className="flex items-center space-x-4  ">
                 <div className="space-y-2">
-                  <Skeleton className="h-4 w-[50px]" />
-                  <Skeleton className="h-4 w-[25px]" />
+                  <Skeleton
+                    className={`h-4 w-[50px] ${
+                      !isSelectActive ? "bg-[#3D66F6]" : "bg-muted"
+                    }`}
+                  />
+                  <Skeleton
+                    className={`h-4 w-[25px] ${
+                      !isSelectActive ? "bg-[#3D66F6]" : "bg-muted"
+                    }`}
+                  />
                 </div>
               </div>
             </div>
