@@ -131,44 +131,55 @@ const Home = () => {
         <div className="md:grid grid-cols-4">
           <div className="flex justify-between mb-3 md:justify-evenly">
             <div>Questions</div>
-            <input
-              className="outline-none border-none"
-              value={questionColor}
-              type="color"
-              name="questionColor"
-              id="questionColor"
-              onChange={(e) => setQuestionColor(e.target.value)}
-            />
+            <div className="w-[20px] h-[20px] rounded-[20px] overflow-hidden p-3 m-0 border-[5px]">
+              <input
+                className="outline-none border-none mt-[-30px] mr-0 mb-0 ml-[-30px] p-0 h-[100px] w-[100px]"
+                value={questionColor}
+                type="color"
+                name="questionColor"
+                id="questionColor"
+                onChange={(e) => setQuestionColor(e.target.value)}
+              />
+            </div>
           </div>
           <div className="flex justify-between mb-3 md:justify-evenly">
             <div>Answers</div>
-            <input
-              value={answerColor}
-              type="color"
-              name="answerColor"
-              id="answerColor"
-              onChange={(e) => setAnswerColor(e.target.value)}
-            />
+            <div className="w-[20px] h-[20px] rounded-[20px] overflow-hidden p-3 m-0 border-[5px]">
+              <input
+                className="outline-none border-none mt-[-30px] mr-0 mb-0 ml-[-30px] p-0 h-[100px] w-[100px]"
+                value={answerColor}
+                type="color"
+                name="answerColor"
+                id="answerColor"
+                onChange={(e) => setAnswerColor(e.target.value)}
+              />
+            </div>
           </div>
           <div className="flex justify-between mb-3 md:justify-evenly">
             <div>Buttons</div>
-            <input
-              value={buttonColor}
-              type="color"
-              name="buttonColor"
-              id="buttonColor"
-              onChange={(e) => setButtonColor(e.target.value)}
-            />
+            <div className="w-[20px] h-[20px] rounded-[20px] overflow-hidden p-3 m-0 border-[5px]">
+              <input
+                className="outline-none border-none mt-[-30px] mr-0 mb-0 ml-[-30px] p-0 h-[100px] w-[100px]"
+                value={buttonColor}
+                type="color"
+                name="buttonColor"
+                id="buttonColor"
+                onChange={(e) => setButtonColor(e.target.value)}
+              />
+            </div>
           </div>
           <div className="flex justify-between mb-3 md:justify-evenly">
             <div>Button Text</div>
-            <input
-              value={buttonTextColor}
-              type="color"
-              name="buttonTextColor"
-              id="buttonTextColor"
-              onChange={(e) => setButtonTextColor(e.target.value)}
-            />
+            <div className="w-[20px] h-[20px] rounded-[20px] overflow-hidden p-3 m-0 border-[5px]">
+              <input
+                className="outline-none border-none mt-[-30px] mr-0 mb-0 ml-[-30px] p-0 h-[100px] w-[100px]"
+                value={buttonTextColor}
+                type="color"
+                name="buttonTextColor"
+                id="buttonTextColor"
+                onChange={(e) => setButtonTextColor(e.target.value)}
+              />
+            </div>
           </div>
         </div>
       )}
